@@ -1,0 +1,22 @@
+ul{
+    background-color: rgb(73, 29, 77);
+    height: 80px;
+    border-radius: 80px;
+    li{
+    list-style: none;
+    text-decoration: none;
+    a{
+        font-size: 25px;
+        text-decoration: none;
+        font-style: italic;
+    }a:hover{ /* Trabajar */
+        color: rgb(255, 0, 0)
+    }
+}
+}
+
+.header__flex--container{
+    @include flex(row, center, center, wrap);
+    margin: 45px 450px 0px 450px;
+    gap: 100px;
+}

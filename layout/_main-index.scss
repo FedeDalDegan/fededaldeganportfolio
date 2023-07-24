@@ -78,3 +78,25 @@ main{
 .imagen_certificado{
   width: 500px;
 }
+
+/* Projects */
+
+#projects{
+  margin-top: 50px;
+}
+
+.project__flex--container{
+  @include flex (row, center, center, wrap);
+}
+
+.cardbody {
+  position: relative;
+  border: 3px solid var(--mid-color);
+  width: 40rem;
+  max-height: 350px;
+  height: 300px;
+  transition: all .5s ease-in-out;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}

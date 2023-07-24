@@ -70,6 +70,27 @@
   50% {
     border-color: transparent; } }
 
+/* Anchor hover */
+.hover-underline-animation {
+  display: inline-block;
+  position: relative; }
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #cc693b;
+  transform-origin: center left right;
+  transition: transform 0.25s ease-out; }
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: center left right; }
+
 /* Body */
 body {
   background-image: url(https://images.unsplash.com/photo-1613323115830-9a4edbd2d56d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
@@ -78,21 +99,19 @@ body {
   background-attachment: fixed; }
 
 /* Header */
-ul {
+nav ul {
   background-color: #353435;
   height: 80px;
-  border-radius: 80px; }
-  ul li {
+  border-radius: 80px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+  nav ul li {
     list-style: none;
     text-decoration: none; }
-    ul li a {
+    nav ul li a {
       font-size: 25px;
       color: wheat;
       text-decoration: none;
       font-style: italic; }
-    ul li a:hover {
-      /* Trabajar */
-      color: red; }
 
 .header__flex--container {
   display: flex;
@@ -177,5 +196,27 @@ main {
 
 .imagen_certificado {
   width: 500px; }
+
+/* Projects */
+#projects {
+  margin-top: 50px; }
+
+.project__flex--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.cardbody {
+  position: relative;
+  border: 3px solid var(--mid-color);
+  width: 40rem;
+  max-height: 350px;
+  height: 300px;
+  transition: all .5s ease-in-out;
+  display: flex;
+  align-content: center;
+  justify-content: center; }
 
 /* Footer */

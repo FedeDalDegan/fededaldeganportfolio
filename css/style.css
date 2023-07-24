@@ -7,69 +7,7 @@
 /* Funciones */
 /* Variables */
 /* Mixins */
-/* Header */
-ul {
-  background-color: #491d4d;
-  height: 80px;
-  border-radius: 80px; }
-  ul li {
-    list-style: none;
-    text-decoration: none; }
-    ul li a {
-      font-size: 25px;
-      text-decoration: none;
-      font-style: italic; }
-    ul li a:hover {
-      /* Trabajar */
-      color: red; }
-
-.header__flex--container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 45px 450px 0px 450px;
-  gap: 100px; }
-
-/* Main Index */
-main {
-  margin-top: 1024px; }
-  main h1 {
-    text-align: center;
-    font-size: 75px;
-    font-weight: 500; }
-  main h2 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 425; }
-
-.portraitPicture {
-  margin-top: 50px;
-  width: 450px;
-  height: 700px; }
-
-.index__main--container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-
-.icon__flex--container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px; }
-
-.github__main--icon {
-  margin-top: 30px;
-  width: 55px;
-  transition: .4s; }
-
-.github__main--icon:hover {
-  transform: scale(1.1);
-  transition: .4s; }
-
+/* Animaciones */
 /* Animacion de texto */
 .text-pop-up-top {
   -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
@@ -107,3 +45,137 @@ main {
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3); } }
+
+/* Typewriter animation */
+.wrapper {
+  margin-top: 45px;
+  /*This part is important for centering*/
+  display: grid;
+  place-items: center; }
+
+.typing-demo {
+  width: 18ch;
+  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em; }
+
+@keyframes typing {
+  from {
+    width: 0; } }
+
+@keyframes blink {
+  50% {
+    border-color: transparent; } }
+
+/* Body */
+body {
+  background-image: url(https://images.unsplash.com/photo-1613323115830-9a4edbd2d56d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+/* Header */
+ul {
+  background-color: #353435;
+  height: 80px;
+  border-radius: 80px; }
+  ul li {
+    list-style: none;
+    text-decoration: none; }
+    ul li a {
+      font-size: 25px;
+      color: wheat;
+      text-decoration: none;
+      font-style: italic; }
+    ul li a:hover {
+      /* Trabajar */
+      color: red; }
+
+.header__flex--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 45px 450px 0px 450px;
+  gap: 100px; }
+
+/* Main Index */
+main {
+  margin-top: 700px; }
+  main h1 {
+    text-align: center;
+    font-size: 75px;
+    font-weight: 500; }
+  main h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 425; }
+
+/* Profile pic */
+.portraitPicture {
+  margin-top: 50px;
+  width: 350px;
+  height: 400px;
+  border-radius: 10%;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px; }
+
+/* Name + Status */
+.index__main--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.icon__flex--container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px; }
+
+.github__main--icon {
+  margin-top: 30px;
+  width: 55px;
+  transition: .4s; }
+
+.github__main--icon:hover {
+  transform: scale(1.1);
+  transition: .4s; }
+
+/* Skills */
+.skills-section {
+  margin-top: 50px; }
+
+.skills__flex--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  gap: 40px;
+  text-align: center;
+  user-select: none; }
+
+.skill-icon {
+  width: 75px; }
+
+/* Certificados */
+.certificados-section {
+  margin-top: 50px; }
+
+.certificados__flex--container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.imagen_certificado {
+  width: 500px; }
+
+/* Footer */

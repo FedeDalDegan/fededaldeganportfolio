@@ -48,7 +48,8 @@
 
 /* Typewriter animation */
 .wrapper {
-  margin-top: 45px;
+  margin-top: 30vh;
+  margin-bottom: 600px;
   /*This part is important for centering*/
   display: grid;
   place-items: center; }
@@ -123,16 +124,15 @@ nav ul {
   gap: 100px; }
 
 /* Main Index */
-main {
-  margin-top: 700px; }
-  main h1 {
-    text-align: center;
-    font-size: 75px;
-    font-weight: 500; }
-  main h2 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 425; }
+main h1 {
+  text-align: center;
+  font-size: 75px;
+  font-weight: 500; }
+
+main h2 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 425; }
 
 /* Profile pic */
 .portraitPicture {

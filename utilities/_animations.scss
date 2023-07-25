@@ -45,7 +45,8 @@ animation: text-pop-up-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 /* Typewriter animation */
 
 .wrapper {
-margin-top: 45px;
+margin-top: 30vh;
+margin-bottom: 600px; 
 /*This part is important for centering*/
 display: grid;
 place-items: center;

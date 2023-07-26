@@ -1,32 +1,39 @@
 nav{
     ul{
         background-color: rgb(53, 52, 53);
-        height: 80px;
-        width: 75%;
-        border-radius: 80px;
+        height: 120px;
+        width: 100%;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         li{
         list-style: none;
         text-decoration: none;
-        a{
-            font-size: 25px;
-            color: wheat;
-            text-decoration: none;
-            font-style: italic;
+            a{
+                font-size: 25px;
+                color: wheat;
+                text-decoration: none;
+                font-style: italic;
+            }
         }
-    }
     }
 }
 
 .header__flex--container{
-    @include flex(row, center, center, wrap);
+    @include flex(row, center, center, nowrap);
     gap: 100px;
 }
 
-.navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0px 0px 0px;
+/* Hamburguesa */
+
+.abrir-menu, .cerrar-menu{
+    display: none;
+}
+
+.abrir-menu{
+    position: fixed;
+    top: 20px; /* Ajusta la distancia desde la parte superior */
+    left: 20px; /* Ajusta la distancia desde la derecha */
+}
+
+.closeMenu, .openMenu{
+    width: 50px;
 }

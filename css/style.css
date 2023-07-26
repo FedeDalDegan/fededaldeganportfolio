@@ -103,9 +103,8 @@ body {
 /* Header */
 nav ul {
   background-color: #353435;
-  height: 80px;
-  width: 75%;
-  border-radius: 80px;
+  height: 120px;
+  width: 100%;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
   nav ul li {
     list-style: none;
@@ -121,15 +120,22 @@ nav ul {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 100px; }
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 0px 0px 0px; }
+/* Hamburguesa */
+.abrir-menu, .cerrar-menu {
+  display: none; }
+
+.abrir-menu {
+  position: fixed;
+  top: 20px;
+  /* Ajusta la distancia desde la parte superior */
+  left: 20px;
+  /* Ajusta la distancia desde la derecha */ }
+
+.closeMenu, .openMenu {
+  width: 50px; }
 
 /* Main Index */
 main {
@@ -281,3 +287,38 @@ main {
   height: 50px; }
 
 /* Footer */
+/* Media Querys */
+@media (max-width: 900px) {
+  .abrir-menu, .cerrar-menu {
+    display: block;
+    border: 0;
+    font-size: 1.25rem;
+    background-color: transparent; }
+  .nav {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #1c1c1cd7;
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    position: fixed; }
+  .nav.visible {
+    opacity: 1;
+    visibility: visible; }
+  .nav-list {
+    flex-direction: column;
+    align-items: end;
+    gap: 20px;
+    margin-top: 100px; }
+  ul {
+    visibility: hidden; }
+  li a {
+    font-size: 20px;
+    visibility: visible; } }

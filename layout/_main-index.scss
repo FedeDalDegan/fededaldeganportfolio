@@ -102,16 +102,48 @@ main{
 
 .project__flex--container{
   @include flex (row, center, center, wrap);
+  gap: 50px;
+  flex-basis: calc(50% - 100px); /* El 20px es para tener en cuenta los márgenes */
 }
 
 .project-card{
-  width: 500px;
+  width: 400px;
   border: 2px solid black;
 }
 
-.card__hover--info:hover{
+.project-card-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.card__hover--info {
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.5;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.project-card-wrapper:hover .card__hover--info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.card__hover--info p {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card__hover--info a img {
+  width: 50px;
+  height: 50px;
 }

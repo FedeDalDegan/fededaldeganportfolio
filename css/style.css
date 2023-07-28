@@ -56,7 +56,7 @@
   place-items: center; }
 
 .typing-demo {
-  width: 18ch;
+  width: 20ch;
   animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
@@ -144,14 +144,25 @@ main {
   main h1 {
     text-align: center;
     font-size: 75px;
-    font-weight: 500; }
+    font-weight: 500;
+    color: black;
+    text-shadow: 1px 2px 6px #615b58; }
   main h2 {
     text-align: center;
     font-size: 50px;
-    font-weight: 425; }
+    font-weight: 425;
+    color: black;
+    text-shadow: 1px 2px 6px #615b58; }
   main h4 {
-    /* */
     width: auto; }
+  main strong {
+    color: #701919; }
+
+/* Section divider (headers) */
+.section-divider {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  text-align: center; }
 
 /* Profile pic */
 .portraitPicture {
@@ -190,10 +201,7 @@ main {
   transform: scale(1.1);
   transition: .4s; }
 
-/* Skills */
-.skills-section {
-  margin-top: 50px; }
-
+/* Skills + Future */
 .skills__flex--container {
   display: flex;
   flex-direction: row;
@@ -201,12 +209,14 @@ main {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 50px;
-  gap: 40px;
+  gap: 50px;
+  user-select: none;
   text-align: center;
-  user-select: none; }
+  color: black;
+  text-shadow: 1px 2px 6px rgba(255, 255, 255, 0.562); }
 
 .skill-icon {
-  width: 75px;
+  width: 100px;
   transition: .4s; }
 
 .skill-icon:hover {
@@ -214,25 +224,19 @@ main {
   transition: .4s; }
 
 /* Certificados */
-.certifications {
-  margin-top: 50px; }
-
 .certificados__flex--container {
-  margin-top: 50px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  margin-top: 50px;
+  /* Distancia entre certificados */ }
 
 .imagen_certificado {
   width: 500px; }
 
 /* Projects */
-#projects, .h2-project {
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
 .project__flex--container {
   display: flex;
   flex-direction: row;
@@ -278,7 +282,7 @@ main {
   font-family: 'Gambetta', serif;
   font-variation-settings: "wght" 311;
   margin-bottom: 0.8rem;
-  color: #be7f44;
+  color: #e6ad78;
   outline: none;
   text-align: center; }
 
@@ -287,11 +291,34 @@ main {
   height: 50px; }
 
 /* Contact */
-.h2-contact {
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
 /* Footer */
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: #353435;
+  color: wheat; }
+
+p {
+  margin-bottom: auto;
+  /* Centered text on Y axis */
+  text-align: center; }
+
+.footer__flex--container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 12px; }
+
+.footerImg {
+  width: 30px;
+  transition: .4s;
+  filter: invert(1); }
+
+.footerImg:hover {
+  transform: scale(1.1);
+  transition: .4s; }
+
 /* Media Querys */
 @media (max-width: 900px) {
   .abrir-menu, .cerrar-menu {

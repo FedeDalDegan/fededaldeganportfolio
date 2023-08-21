@@ -51,7 +51,7 @@
 .wrapper {
   margin-top: 30vh;
   margin-bottom: 600px;
-  /*This part is important for centering*/
+  /* This part is important for centering */
   display: grid;
   place-items: center; }
 
@@ -382,3 +382,33 @@ p {
   li a {
     font-size: 20px;
     visibility: visible; } }
+
+@media (max-width: 768px) {
+  .typing-demo {
+    width: 17ch; }
+  h1 {
+    user-select: none; }
+  h2 {
+    user-select: none; }
+  .contact {
+    font-size: 15px;
+    height: 175px;
+    width: 90%;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%; } }
+
+@media (max-width: 390px) {
+  .typing-demo {
+    width: 15ch; }
+  h1 {
+    font-size: 45px; }
+  /* Certificados */
+  .imagen_certificado {
+    width: 85%; }
+  .project-card {
+    width: 100%; }
+  .card__hover--info {
+    width: 100%; }
+  .contact h3 {
+    font-size: 17px; } }

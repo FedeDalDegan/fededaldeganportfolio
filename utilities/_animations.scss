@@ -2,7 +2,7 @@
 
 .text-pop-up-top {
     -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-animation: text-pop-up-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
     margin-top: 125px;
     display: flex;
     flex-direction: column;
@@ -47,7 +47,7 @@ animation: text-pop-up-top 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 .wrapper {
 margin-top: 30vh;
 margin-bottom: 600px; 
-/*This part is important for centering*/
+/* This part is important for centering */
 display: grid;
 place-items: center;
 }

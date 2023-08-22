@@ -390,6 +390,9 @@ p {
     user-select: none; }
   h2 {
     user-select: none; }
+  .portraitPicture {
+    height: 90%;
+    width: 90%; }
   .contact {
     font-size: 15px;
     height: 175px;
@@ -400,9 +403,9 @@ p {
 
 @media (max-width: 390px) {
   .typing-demo {
-    width: 15ch; }
-  h1 {
-    font-size: 45px; }
+    width: 16ch; }
+  .name {
+    font-size: 35px; }
   /* Certificados */
   .imagen_certificado {
     width: 85%; }
@@ -411,4 +414,6 @@ p {
   .card__hover--info {
     width: 100%; }
   .contact h3 {
-    font-size: 17px; } }
+    font-size: 17px; }
+  .h2_certifieds {
+    font-size: 35px; } }

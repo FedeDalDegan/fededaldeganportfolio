@@ -58,6 +58,11 @@
     h2{
         user-select: none;
     }
+    
+    .portraitPicture{
+        height: 90%;
+        width: 90%;
+    }
 
     .contact{
         font-size: 15px;
@@ -71,11 +76,11 @@
 
 @media (max-width:390px){
     .typing-demo{
-        width: 15ch;
+        width: 16ch;
     }
 
-    h1{
-        font-size: 45px;
+    .name{
+        font-size: 35px;
     }
 
     /* Certificados */
@@ -93,5 +98,9 @@
 
     .contact h3{
         font-size: 17px;
+    }
+
+    .h2_certifieds{
+        font-size: 35px;
     }
 }

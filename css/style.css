@@ -416,4 +416,11 @@ p {
   .contact h3 {
     font-size: 17px; }
   .h2_certifieds {
-    font-size: 35px; } }
+    font-size: 35px; }
+  /* Footer */
+  .footer__flex--container {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    height: auto;
+    flex-direction: column;
+    gap: 20px; } }

@@ -1,12 +1,17 @@
 nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     ul{
         background-color: rgb(53, 52, 53);
-        height: 120px;
+        height: 110px;
         width: 100%;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         li{
         list-style: none;
         text-decoration: none;
+        position: sticky;
             a{
                 font-size: 25px;
                 color: wheat;

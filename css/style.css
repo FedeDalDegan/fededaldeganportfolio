@@ -49,8 +49,8 @@
 
 /* Typewriter animation */
 .wrapper {
-  margin-top: 30vh;
-  margin-bottom: 600px;
+  margin-top: 40vh;
+  margin-bottom: 550px;
   /* This part is important for centering */
   display: grid;
   place-items: center; }
@@ -95,25 +95,55 @@
 
 /* Body */
 body {
-  background-image: url(https://images.unsplash.com/photo-1613323115830-9a4edbd2d56d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80);
+  background-color: antiquewhite;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  transition: background-color 0.5s, color 0.5s; }
+
+body.dark-mode {
+  background-color: #222222;
+  color: #fff; }
+
+#toggle-mode {
+  position: fixed;
+  top: 130px;
+  left: 20px;
+  background-color: transparent;
+  border: 0;
+  transition: transform 0.3s; }
+
+.dark-mode {
+  background-color: linear-gradient(to bottom, #f5f5f5, #ffffff);
+  color: white;
+  transition: background-color 0.5s, color 0.5s; }
+
+#toggle-mode.dark-mode {
+  transform: rotate(180deg); }
+
+.dark-img {
+  width: 75px; }
 
 /* Header */
-nav ul {
-  background-color: #353435;
-  height: 120px;
+nav {
+  position: fixed;
+  top: 0;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
-  nav ul li {
-    list-style: none;
-    text-decoration: none; }
-    nav ul li a {
-      font-size: 25px;
-      color: wheat;
+  z-index: 1000; }
+  nav ul {
+    background-color: #353435;
+    height: 110px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; }
+    nav ul li {
+      list-style: none;
       text-decoration: none;
-      font-style: italic; }
+      position: sticky; }
+      nav ul li a {
+        font-size: 25px;
+        color: wheat;
+        text-decoration: none;
+        font-style: italic; }
 
 .header__flex--container {
   display: flex;

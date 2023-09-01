@@ -13,3 +13,23 @@ abrirBtn.addEventListener("click", function() {
 cerrarBtn.addEventListener("click", function() {
   nav.classList.remove("visible");
 });
+
+// Modo obscuro
+
+const toggleModeButton = document.getElementById("toggle-mode");
+const body = document.body;
+
+window.addEventListener("load", function() {
+  const isDarkModeSaved = localStorage.getItem("darkModeEnabled");
+  if (isDarkModeSaved === "true") {
+    body.classList.add("dark-mode");
+  }
+});
+
+toggleModeButton.addEventListener("click", function() {
+  body.classList.toggle("dark-mode");
+  const isDarkMode = body.classList.contains("dark-mode");
+  localStorage.setItem("darkModeEnabled", isDarkMode); // Guardar el estado en el almacenamiento local
+});
+
+

@@ -130,7 +130,7 @@ main{
   left: 0;
   opacity: 0;
   visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.815);
   width: 100%;
   height: 100%;
   display: flex;
@@ -153,6 +153,8 @@ main{
   font-variation-settings: "wght" 311;
   margin-bottom: 0.8rem;
   color: rgb(236, 45, 45);
+  text-shadow: text-shadow;
+  font-weight: 450;
   outline: none;
   text-align: center;
 }

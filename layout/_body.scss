@@ -38,8 +38,8 @@ body.dark-mode{
     strong{
         color: orange;
     }
-    .github__main--icon{
-        filter: invert(2);
+    .github__main--icon, .dark-img{
+        filter: invert(1);
     }
 }
   

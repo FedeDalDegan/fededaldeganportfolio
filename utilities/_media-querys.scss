@@ -1,3 +1,4 @@
+
 @media (max-width: 900px) {
     .abrir-menu, .cerrar-menu {
         display: block;
@@ -46,6 +47,9 @@
     }
 }
 
+
+// 768px (TABLET)
+
 @media (max-width:768px){
     .typing-demo{
         width: 17ch;
@@ -73,6 +77,8 @@
         margin-right: 5%;
     }
 }
+
+// 390px (PHONE)
 
 @media (max-width:390px){
     .typing-demo{

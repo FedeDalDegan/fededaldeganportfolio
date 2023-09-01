@@ -1,9 +1,11 @@
 footer{
     height: 100px;
     width: 100%;
-    background-color: #353435;
+    background-color: $bg-color;
     color: wheat;
-}p{
+}
+
+p{
     margin-bottom: auto; /* Centered text on Y axis */
     text-align: center;
 }

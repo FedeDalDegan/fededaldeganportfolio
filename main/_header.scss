@@ -4,10 +4,10 @@ nav{
     width: 100%;
     z-index: 1000;
     ul{
-        background-color: rgb(53, 52, 53);
+        background-color: $bg-color;
         height: 110px;
         width: 100%;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        box-shadow: $box-shadow;
         li{
         list-style: none;
         text-decoration: none;
@@ -16,7 +16,6 @@ nav{
                 font-size: 25px;
                 color: wheat;
                 text-decoration: none;
-                font-style: italic;
             }
         }
     }
@@ -35,8 +34,8 @@ nav{
 
 .abrir-menu{
     position: fixed;
-    top: 20px; /* Ajusta la distancia desde la parte superior */
-    left: 20px; /* Ajusta la distancia desde la derecha */
+    top: 20px;
+    left: 20px;
 }
 
 .closeMenu, .openMenu{

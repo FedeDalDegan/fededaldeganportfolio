@@ -127,7 +127,7 @@ body.dark-mode {
     text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.5); }
   .dark-mode strong {
     color: orange; }
-  .dark-mode .github__main--icon, .dark-mode .dark-img {
+  .dark-mode .github__main--icon, .dark-mode .dark-img, .dark-mode .openMenu {
     filter: invert(1); }
 
 /* Header */
@@ -267,7 +267,10 @@ main {
   /* Distancia entre certificados */ }
 
 .imagen_certificado {
-  width: 500px; }
+  width: 200px; }
+
+.imagen_carrera {
+  width: 600px; }
 
 /* Projects */
 .project__flex--container {
@@ -420,7 +423,7 @@ p {
 
 @media (max-width: 768px) {
   .typing-demo {
-    width: 17ch; }
+    width: 20ch; }
   h1 {
     user-select: none; }
   h2 {
@@ -428,6 +431,8 @@ p {
   .portraitPicture {
     height: 90%;
     width: 90%; }
+  .imagen_carrera {
+    width: 85%; }
   .contact {
     font-size: 15px;
     height: 175px;
@@ -436,7 +441,7 @@ p {
     margin-left: 5%;
     margin-right: 5%; } }
 
-@media (max-width: 390px) {
+@media (max-width: 572px) {
   .typing-demo {
     width: 16ch; }
   .name {

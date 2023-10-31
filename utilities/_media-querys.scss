@@ -52,7 +52,7 @@
 
 @media (max-width:768px){
     .typing-demo{
-        width: 17ch;
+        width: 20ch;
     }
     
     h1{
@@ -68,6 +68,10 @@
         width: 90%;
     }
 
+    .imagen_carrera{
+        width: 85%;
+    }
+
     .contact{
         font-size: 15px;
         height: 175px;
@@ -78,9 +82,9 @@
     }
 }
 
-// 390px (PHONE)
+// 572px (Breakpoint)
 
-@media (max-width:390px){
+@media (max-width:572px){
     .typing-demo{
         width: 16ch;
     }
